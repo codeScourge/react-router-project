@@ -40,9 +40,9 @@ export function CharacterChooser() {
     return  <div>
                 <div className="nav">
                     <div className="nav__links">
-                        <button className="nav__links__link" onClick={filterJedi}>Jedi</button>
-                        <button className="nav__links__link" onClick={filterSith}>Sith</button>
-                        <button className="nav__links__link" onClick={filterDroid}>Droid</button>
+                        <button className="nav__links__link" onClick={filterJedi} style={{backgroundColor: params.get("type") == "jedi" ? "#AEC6CF" : "#F7F7F7"}}>Jedi</button>
+                        <button className="nav__links__link" onClick={filterSith} style={{backgroundColor: params.get("type") == "sith" ? "#ff6961" : "#F7F7F7"}}>Sith</button>
+                        <button className="nav__links__link" onClick={filterDroid} style={{backgroundColor: params.get("type") == "droid" ? "#77DD77" : "#F7F7F7"}}>Droid</button>
                     </div>
                 </div>
 
